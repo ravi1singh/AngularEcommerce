@@ -1,0 +1,31 @@
+<div class="product-grid grid">
+       
+    <div class="product-image">
+      <a *ngIf="product" [routerLink]="['/layout/product-details', product?.productId]">
+        <img class="pic-1" [src]="'/assets/product_images/' + product?.image">
+      </a>
+      <a *ngIf="!product" ><img class="pic-1" [src]="'/assets/product_images/' + product?.image"></a>
+      <ul class="social">
+        <li><a *ngIf="product" [routerLink]="['/layout/product-details', product?.productId]" data-tip="Quick View"><i class="fa fa-eye"></i></a>
+          <a *ngIf="!product" ><i class="fa fa-eye"></i></a>
+        </li>
+      </ul>
+      </div>
+  <div class="product-content">
+
+      <h3 class="title">
+        <a *ngIf="product" [routerLink]="['/layout/product-details', product?.productId]">
+            <strong>
+            {{product?.productName}}
+          </strong>
+        </a>
+        <a *ngIf="!product" ><strong>
+          {{product?.productName}}
+        </strong></a>
+      </h3>
+      <div class="price">
+        {{product?.price}}
+      </div>
+    
+    </div>
+  </div>

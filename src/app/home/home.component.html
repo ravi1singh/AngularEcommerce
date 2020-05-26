@@ -1,0 +1,48 @@
+<div class="container">
+   <div class="mt-4">
+      <div class="row">
+         
+            <div class="col-12">
+               
+            <!-- Card -->
+               <!-- <div class="row">
+                  <div class="col-md-4">Home</div>
+                  <div class="col-md-4" >qwdqw</div>
+                  <div class="col-md-4"></div>
+               </div> -->
+               <mdb-card class="m-0">
+               <!--Card content-->
+                  
+                  <mdb-card-body>
+                  <!--Title-->
+                     <mdb-card-title>
+                     </mdb-card-title>
+
+                           <!--Text-->
+                           <mdb-card-text>
+                              <section class="text-center pb-3 mb-5 mt-1">
+                              <!--Section description-->
+                                 <p class="grey-text pb-1 font-weight-normal font-italic">
+                                    Hi {{name}} !! Look at the products available at your location.
+                                 </p>
+   
+         
+                              <!--Grid row-->
+                              <div class="row">
+                              <!--Grid column-->
+                                 <app-product-card *ngFor="let product of allproducts" [productData]="product" class="col-md-4 col-sm-6 mb-3 row-eq-height"></app-product-card>
+                              <!--Grid column-->
+                              </div>
+                              <!--Grid row-->
+                              </section>
+                           </mdb-card-text>
+                  </mdb-card-body>
+               </mdb-card>
+
+               <!-- Card -->
+            </div>
+      </div>
+   </div>
+</div>
+
+

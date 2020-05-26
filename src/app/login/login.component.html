@@ -1,0 +1,19 @@
+<section class="register-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 register-sec">
+              <h2 class="text-center">Sign in</h2>
+              <br><div class="content">
+              <label for="username"  >Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text"  [(ngModel)]="email"/><br><br>
+              <label for="password" >Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="password" [(ngModel)]="password"/><br><br>
+              </div>
+              <a [routerLink]="['/register']"><button type="submit" (click)="submit()" class="btn btn-register float-left">Sign up</button></a>
+  <button type="submit" (click)="submit()" class="btn btn-register float-right">Login</button>
+     
+</div>
+        <div class="col-md-8 banner-sec"></div>
+     </div>
+    </div>
+  </section>

@@ -1,0 +1,147 @@
+<!-- <section class="register-block">
+    <div class="container">
+            
+        <div class="row register-sec">
+            <div class="col-md-12 register-sec pb-0 pt-0">
+                    <h2 class="text-center">Register Now</h2>
+            </div>
+            
+                <div class="row">
+                    <div class="col-md-100 ">
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="Name" class="text-uppercase">Name</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                        <input type="text" class="form-control" [(ngModel)]="name"/><br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="Address" class="text-uppercase">Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="form-control" [(ngModel)]="address"/><br><br>
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <label for="Town" class="text-uppercase">City</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="form-control" [(ngModel)]="city"/><br><br>
+                        
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="State" class="text-uppercase">State</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="form-control" [(ngModel)]="state"/><br><br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Country" class="text-uppercase">Country</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="form-control" [(ngModel)]="country"/><br><br>
+
+                    
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="ZipCode" class="text-uppercase">Zip-Code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="form-control" [(ngModel)]="Zipcode"/><br><br>
+                        
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Email" class="text-uppercase">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="email" class="form-control" [(ngModel)]="email"/><br><br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="Mobile" class="text-uppercase">Mobile</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="form-control" [(ngModel)]="mobile"/><br><br>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <label for="Password" class="text-uppercase">Password</label>
+                             &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" class="form-control" [(ngModel)]="password"/> <br><br>
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="CreditCard" class="text-uppercase">Credit Card Number</label>
+                            &nbsp;&nbsp;&nbsp; &nbsp;
+                            <input type="text" class="form-control" [(ngModel)]="creditCard"/><br>   <br><br>
+                            
+                        <div>
+                            <button type="submit" class="btn btn-register float-right" (click)="submit()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+    </div>
+</section> -->
+<section class="register-block">
+    <div class="row-register-sec">
+    <div class="container">
+        <div class="col-md-12 register-sec pb-0 pt-0">
+            <h2 class="text-center">Register Now</h2>
+        </div>
+    <form>
+        <div class="row">
+        <div class="form-group" class="col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Enter Name" [(ngModel)]="name" name="name">
+        </div>
+        <div class="form-group" class="col-md-6">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" placeholder="Enter Address"  [(ngModel)]="address" name="address">
+        </div>
+        </div>
+    
+        <div class="row"> 
+        <div class="form-group" class="col-md-6">
+            <label for="city">City</label>
+            <input type="text" class="form-control" placeholder="Enter City" [(ngModel)]="city" name="city">
+        </div>
+        <div class="form-group" class="col-md-6">
+            <label for="state">State</label>
+            <input type="text" class="form-control" placeholder="Enter State" [(ngModel)]="state" name="state">
+         </div>
+         </div>
+    
+        <div class="row">  
+        <div class="form-group" class="col-md-6">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" placeholder="country" [(ngModel)]="country" name="country">
+        </div>
+      
+        <div class="form-group" class="col-md-6">
+            <label for="zip">ZipCode</label>
+            <input type="text" class="form-control" placeholder="Enter Zip" [(ngModel)]="zipCode" name="zip">
+        </div>
+        </div>
+    
+        <div class="row">
+        <div class="form-group" class="col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="Enter Email" [(ngModel)]="email" name="mail">
+        </div>
+        <div class="form-group" class="col-md-6">
+            <label for="mobile">Mobile</label>
+            <input type="text" class="form-control" placeholder="Enter Mobile Number" [(ngModel)]="mobile" name="mobile">
+        </div>
+    </div>
+    
+        <div class="row">
+        <div class="form-group" class="col-md-6">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password" [(ngModel)]="password" name="pass">
+        </div>
+        <div class="form-group" class="col-md-6">
+            <label for="creditCard">CreditCard</label>
+            <input type="text" class="form-control" placeholder="Enter CreditCard Number" [(ngModel)]="creditCard" name="cc">
+        </div>
+       </div>
+       &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <div>
+            <button type="submit" class="btn btn-register float-right"   (click)="submit()">Submit</button>
+        </div>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+    
+    </form>
+    </div>
+    </div>
+    </section>

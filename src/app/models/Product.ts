@@ -1,0 +1,19 @@
+export class Product{
+    productId:number;
+    description:string;
+	image:string;
+	price:number;
+	productCount:number;
+    productName:string;
+    location:string;
+    constructor(productId:number,description:string,image:string,price:number,
+        productCount:number,productName:string,location:string){
+            this.productId=productId;
+            this.description=description;
+            this.image=image;
+            this.price=price;
+            this.productCount=productCount;
+            this.productName=productName;
+            this.location=location;
+    }
+}
