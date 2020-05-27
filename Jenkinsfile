@@ -68,19 +68,19 @@ pipeline {
                 echo "Trying to Push Docker Build to DockerHub"
           }
     } 
-    //  stage('Execute Rundeck job') {
-    //     steps {
-    //       script {
-    //         step([$class: "RundeckNotifier",
-    //               includeRundeckLogs: true,
-    //               jobId: "7911e830-0308-41f4-8854-8c33f0b9ff11",
-    //               rundeckInstance: "Rundeck",
-    //               shouldFailTheBuild: true,
-    //               shouldWaitForRundeckJob: true,
-    //               tailLog: true])
-    //       }
-    //     }
-    // }
+     stage('Execute Rundeck job') {
+        steps {
+          script {
+            step([$class: "RundeckNotifier",
+                  includeRundeckLogs: true,
+                  jobId: "5c4945d5-f062-44c7-8f59-49f0a7fd71c9",
+                  rundeckInstance: "Rundeck",
+                  shouldFailTheBuild: true,
+                  shouldWaitForRundeckJob: true,
+                  tailLog: true])
+          }
+        }
+    }
     
   }
 }
