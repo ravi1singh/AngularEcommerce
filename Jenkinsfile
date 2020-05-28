@@ -21,15 +21,15 @@ pipeline {
         sh "npm install"
       }
     }
-    // stage('TEST') {
-    //   steps {
+    stage('TEST') {
+      steps {
         
-    //     // echo "insert your testing here"
-    //     // sh "ng config -g cli.warnings.versionMismatch false"
-    //     // // sh "ng tests --progress=true --karmaConfig=karma.config.js"
-    //     sh "node_modules/.bin/ng test --progress=true"
-    //   }
-    // }
+        // echo "insert your testing here"
+        // sh "ng config -g cli.warnings.versionMismatch false"
+        // // sh "ng tests --progress=true --karmaConfig=karma.config.js"
+        sh "node_modules/.bin/ng test --progress=true"
+      }
+    }
     stage('BUILD APP') {
       steps {
         sh "node_modules/.bin/ng build"
